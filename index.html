@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Today Java Script</h1>
+    <script>
+        let userAge = prompt("Enter your Age");
+        console.log(typeof userAge);
+        //Type Casting....
+        userAge = Number(userAge);
+        console.log(typeof userAge);
+
+        if (18 > userAge){
+            alert("You are not elihible");
+        }
+
+        let weight = prompt("Enter your weight");
+        weight = Number(weight);
+        let height = prompt("Enter your height");
+        height = Number(height);
+
+        let bmi = weight / (height ** 2);
+        console.log(bmi);
+
+        if (bmi < 25){
+            alert("Over Weight");
+        }else {
+            alert("under weight");
+        }
+
+        let percentage = prompt("Enter your obt percentage");
+        percentage = Number(percentage);
+
+        if (percentage > 90){
+            alert("Grade A");
+        }else if (percentage > 80){
+            alert("Grade B");
+        }else if (percentage > 70){
+            alert("Grade C");
+        }else if (percentage > 60){
+            alert("F");
+        }
+        
+    </script>
+</body>
+</html>
